@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>e9c84ef0-491c-491f-85b9-61fb961bef61</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="App.Metrics.AspNetCore.Health" Version="3.1.0" />
+    <PackageReference Include="App.Metrics.AspNetCore.Health.Endpoints" Version="3.1.0" />
+    <PackageReference Include="App.Metrics.AspNetCore.Mvc" Version="3.1.0" />
+    <PackageReference Include="App.Metrics.AspNetCore.Reporting" Version="3.1.0" />
+    <PackageReference Include="App.Metrics.AspNetCore.Tracking" Version="3.1.0" />
+    <PackageReference Include="App.Metrics.Formatters.Prometheus" Version="3.1.0" />
+    <PackageReference Include="App.Metrics.Health.Checks.Http" Version="3.1.0" />
+    <PackageReference Include="App.Metrics.Health.Checks.Network" Version="3.1.0" />
+    <PackageReference Include="App.Metrics.Health.Checks.Sql" Version="3.1.0" />
+    <PackageReference Include="App.Metrics.Health.Extensions.Hosting" Version="3.1.0" />
+    <PackageReference Include="App.Metrics.Health.Reporting.Metrics" Version="3.1.0" />
+    <PackageReference Include="App.Metrics.Reporting.Console" Version="3.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.7.9" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  aspnetwebsite:
+    image: ${DOCKER_REGISTRY-}aspnetwebsite
+    build:
+      context: .
+      dockerfile: AspNetWebSite/Dockerfile
